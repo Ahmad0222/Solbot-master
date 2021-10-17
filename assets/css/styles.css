@@ -405,8 +405,11 @@ color: var(--title-color);
   align-self: center;
 }
 .card-header_custom{
-  border-top: 1px solid white;
   padding: 1rem 0rem ;
+}
+.faq_card{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 .faq_link{
   margin-left: 1rem;
