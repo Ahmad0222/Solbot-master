@@ -228,7 +228,7 @@ color: var(--title-color);
 cursor: pointer;
 }
 .nav_icon{
-font-size: 1.8rem;
+font-size: 2rem;
 color: var(--first-color-second);
 transition: 0.4s;
 }
@@ -273,12 +273,16 @@ color: var(--title-color);
   .nav__list {
     flex-direction: row-reverse;
     column-gap: 1rem;
+    transform: translateY(0.6rem);
   }
   .nav__toggle, .nav__close {
     display: none;
   }
   .active-link::before {
     background-color: var(--text-color);
+  }
+  .nav__logo{
+    width: 180px;
   }
 }
 
@@ -307,9 +311,26 @@ color: var(--title-color);
   font-size: 1.3rem;
 }
 .home_button:hover{
-  color: var(--first-color);
-  background-color: var(--first-color-second);
+  color: var(--first-color-lighter);
+  background-color: transparent;
   text-decoration: none;
+  border: 2px solid var(--first-color-second);
+  transform: scale(-1);
+}
+.home_img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  object-position: 45%;
+}
+.home__container {
+  position: relative;
+  height: calc(70vh - var(--header-height));
+  align-content: center;
+  /* row-gap: 3rem; */
+  padding-top: 7rem;
 }
 .mission_content{
   font-size: 1.5rem;
@@ -426,4 +447,66 @@ color: var(--title-color);
 .footer_copy{
   transform: translateY(1.5rem);
   font-size: 1.2rem;
+}
+
+/* ====================Ticker Line Animation========================= */
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.ticker-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 20rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.ticker-wrap .ticker {
+  display: inline-block;
+  height: 20rem;
+  line-height: 20rem;
+  white-space: nowrap;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite repeat;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 25s;
+  animation-duration: 25s;
+}
+
+.ticker-wrap .ticker__item {
+  display: inline-flex;
+  height: 17rem;
+  width: 18rem;
+  margin: 0rem 5rem;
+  border-radius: 5px;
+  background-color: var(--first-color-second);
+  background-image: url(/assets/img/Pirate1.png);
 }
