@@ -348,6 +348,9 @@ color: var(--title-color);
 .specs_line{
   font-size: 1.3rem;
 }
+.discord_integration{
+  transform: translateX(-9rem);
+}
 .crew_content{
   display: flex;
   justify-content: space-between;
