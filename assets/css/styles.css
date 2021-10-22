@@ -358,8 +358,6 @@ color: var(--title-color);
   text-align: center;
 }
 .crew_img{
-  /* padding: 10rem; */
-  /* background-color: var(--first-color-lighter); */
   height: 17rem;
   border-radius: 10px;
   margin-bottom: 1rem;
