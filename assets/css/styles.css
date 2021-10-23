@@ -535,6 +535,7 @@ color: var(--title-color);
   }
   .nav__logo{
     width: 120px;
+    padding-left: 15px;
   }
   .home_text{
     width: auto;
@@ -552,5 +553,7 @@ color: var(--title-color);
     align-items: center;
     row-gap: 1rem;
   }
-
+  .footer_socials{
+    transform: translateX(0.6rem);
+  }
 }
