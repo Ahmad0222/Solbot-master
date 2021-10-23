@@ -322,7 +322,7 @@ color: var(--title-color);
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  object-position: 15%;
+  object-position: 20%;
 }
 .home__container {
   position: relative;
@@ -512,4 +512,36 @@ color: var(--title-color);
   border-radius: 5px;
   background-color: var(--first-color-second);
   background-image: url(/assets/img/Pirate1.png);
+}
+
+@media screen and (max-width: 600px) { 
+  .home_content{
+    flex-direction: column;
+  }
+  .home_char{
+    position: absolute;
+  }
+  .home_subheading{
+    width: auto;
+  }
+  .discord_integration{
+    display: none;
+  }
+  .specs_text{
+    width: 100%;
+  }
+  .nav__logo{
+    width: 120px;
+  }
+  .home_text{
+    width: auto;
+  }
+  .crew_content{
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .bene_content{
+    flex-direction: column;
+  }
+
 }
