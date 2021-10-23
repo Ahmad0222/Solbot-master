@@ -518,6 +518,9 @@ color: var(--title-color);
   .home_content{
     flex-direction: column;
   }
+  .home__container{
+    padding-top: 6rem;
+  }
   .home_char{
     position: absolute;
   }
@@ -543,5 +546,6 @@ color: var(--title-color);
   .bene_content{
     flex-direction: column;
   }
+
 
 }
