@@ -546,6 +546,11 @@ color: var(--title-color);
   .bene_content{
     flex-direction: column;
   }
-
+  .footer_content{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    row-gap: 1rem;
+  }
 
 }
