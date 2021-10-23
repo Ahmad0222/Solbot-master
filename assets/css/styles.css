@@ -556,4 +556,15 @@ color: var(--title-color);
   .footer_socials{
     transform: translateX(0.6rem);
   }
+  .ticker-wrap .ticker__item{
+    margin: 0rem 2rem;
+    width: 12rem;
+    height: 13rem;
+  }
+  .crew_team{
+    margin-bottom: 2rem;
+  }
+  .bene_img{
+    padding: 8rem;
+  }
 }
