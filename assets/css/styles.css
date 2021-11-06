@@ -358,7 +358,7 @@ color: var(--title-color);
   text-align: center;
 }
 .crew_img{
-  height: 17rem;
+  width: 17rem;
   border-radius: 10px;
   margin-bottom: 1rem;
 }
@@ -514,7 +514,7 @@ color: var(--title-color);
   background-image: url(/assets/img/Pirate1.png);
 }
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 678px) { 
   .home_content{
     flex-direction: column;
   }
@@ -545,7 +545,8 @@ color: var(--title-color);
     row-gap: 1rem;
   }
   .bene_content{
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .footer_content{
     flex-direction: column;
@@ -566,5 +567,87 @@ color: var(--title-color);
   }
   .bene_img{
     padding: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) { 
+  .home_content{
+    flex-direction: column;
+  }
+  .home__container{
+    padding-top: 6rem;
+  }
+  .home_char{
+    position: absolute;
+  }
+  .home_subheading{
+    width: auto;
+  }
+  .discord_integration{
+    display: none;
+  }
+  .specs_text{
+    width: 100%;
+  }
+  .nav__logo{
+    width: 120px;
+    padding-left: 15px;
+  }
+  .home_text{
+    width: auto;
+  }
+  .crew_content{
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .bene_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer_content{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  .footer_socials{
+    transform: translateX(0.6rem);
+  }
+  .ticker-wrap .ticker__item{
+    margin: 0rem 2rem;
+    width: 12rem;
+    height: 13rem;
+  }
+  .crew_team{
+    margin-bottom: 2rem;
+  }
+  .bene_img{
+    padding: 8rem;
+  }
+}
+
+@media  screen and (max-width: 992px) {
+  .crew_img{
+    width: 12rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  .crew_title{
+    font-size: 1.1rem;
+  }
+  .bene_img{
+    padding: 5rem;
+  }
+  .specs_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .discord_integration{
+    margin-top: 3rem;
+    max-width: 150%;
+  }
+  .specs_text{
+    width: 100%;
   }
 }
