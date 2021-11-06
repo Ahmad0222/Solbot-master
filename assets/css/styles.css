@@ -645,7 +645,6 @@ color: var(--title-color);
   }
   .discord_integration{
     margin-top: 3rem;
-    max-width: 150%;
     transform: translate(-4rem);
   }
   .specs_text{
