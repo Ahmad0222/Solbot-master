@@ -452,6 +452,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', end
 .faq_card{
   border-top: 1px solid white;
   border-bottom: 1px solid white;
+  transition: 0.4s ease-in;
 }
 .faq_link{
   margin-left: 1rem;
